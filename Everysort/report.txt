@@ -1,0 +1,35 @@
+* Trong đây, là code của 5 thuật toán sắp xếp và input dùng để thử nghiệm cho 5 thuật toán.
+
+* Các thuật toán đều được chạy thử nghiệm trên nền tảng codeforces để đảm bảo tính chính xác thời gian thực thi và bộ nhớ sử dụng đối với mỗi thuật toán và đồng
+thời đảm bảo các thuật toán đều được chạy trên 1 dữ liệu và cùng 1 máy chấm (giảm bớt các tác nhân ngoại tác động đến thuật toán).
+
+* Thông qua các số liệu ta thấy rằng:
+      ~ sắp xếp Quick sort: 
+          - Thời gian chạy nhanh
+          - tốn ít tài nguyên hơn so với 2 thuật
+          - Cài đặt đơn giản
+      ~ Sắp xếp Heap sort:
+          - Thời gian chạy nhanh
+          - Cài đặt trung bình
+          - Tốn khá nhiều tài nguyên
+      ~ Sắp xếp merge sort
+          - Thời gian ổn định giữa các test (nhưng khá chậm so với các thuật)
+          - Cài đặt khó, dài
+          - Tốn nhiều tài nguyên
+      ~ hai code dùng hàm sẵn (c++, numpy)
+          - Thời gian nhanh ổn định (mặc dù numpy chậm nhưng việc này là do python không xử lý tính toán mạnh bằng c++)
+          - Cài đặt rất đơn giản (chỉ gọi hàm)
+          - Tiết kiệm khá nhiều tài nguyên máy tính 
+
+* So sánh
+- Qua quá trình thực nghiệm, thu được kết quả các thuật toán có độ phức tạp bất ổn định (Quick sort, Heap sort) cho kết quả tốt hơn so với thuật toán ổn
+định (merge sort).
+
+- Ngoài ra về mặt bộ nhớ, mặc dù merge sort là thuật toán ổn định tuy nhiên tốn nhiều bộ nhớ hơn so với các thuật khác. (Một phần do code thực hiện bằng quay
+  lui nên cần sử dụng nhiều bộ nhớ để lưu trữ cũng như thực thi hơn.
+
+- Trong 3 thuật Quick sort, merge sort, heap sort thì thuật quick sort là thuật mang lại hiệu quả tốt nhất (cài đặt ngắn, gọn, đơn giản, thời gian thực hiện 
+  nhanh) có thể thấy hiệu suất của nó rất tốt trong các bộ test ngẫu nhiên.
+                                                                                                                         
+- Xét về mặt ngôn ngữ thì ta cũng thấy C++ (4 thuật) nhanh hơn nhiều với python (sort bằng numpy) gấp 2 lần.
+                                                                                                                         
